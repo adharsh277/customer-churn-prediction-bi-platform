@@ -1,19 +1,24 @@
--- Schema for customer churn dataset
--- Example table definitions
+-- Create customers table matching the Telco Customer Churn dataset
 CREATE TABLE customers (
-    customer_id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    email VARCHAR(255),
-    signup_date DATE,
-    churned BOOLEAN,
-    churn_date DATE
-);
-
-CREATE TABLE subscriptions (
-    subscription_id SERIAL PRIMARY KEY,
-    customer_id INTEGER REFERENCES customers(customer_id),
-    plan VARCHAR(50),
-    monthly_fee NUMERIC(8,2),
-    start_date DATE,
-    end_date DATE
+    customer_id VARCHAR(50) PRIMARY KEY,
+    gender VARCHAR(20),
+    senior_citizen INTEGER,
+    partner VARCHAR(10),
+    dependents VARCHAR(10),
+    tenure INTEGER,
+    phone_service VARCHAR(10),
+    multiple_lines VARCHAR(30),
+    internet_service VARCHAR(30),
+    online_security VARCHAR(30),
+    online_backup VARCHAR(30),
+    device_protection VARCHAR(30),
+    tech_support VARCHAR(30),
+    streaming_tv VARCHAR(30),
+    streaming_movies VARCHAR(30),
+    contract VARCHAR(50),
+    paperless_billing VARCHAR(10),
+    payment_method VARCHAR(50),
+    monthly_charges NUMERIC(10,2),
+    total_charges NUMERIC(10,2),
+    churn VARCHAR(10)
 );
