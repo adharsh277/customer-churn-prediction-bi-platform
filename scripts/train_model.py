@@ -1,4 +1,5 @@
 import pandas as pd
+from pathlib import Path
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -7,6 +8,10 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import roc_auc_score
 
 import joblib
+
+
+Path("../models").mkdir(parents=True, exist_ok=True)
+Path("../data/processed").mkdir(parents=True, exist_ok=True)
 
 
 # Load dataset
@@ -76,6 +81,18 @@ print(
         y_test,
         probs
     )
+)
+
+importance = pd.DataFrame({
+    "Feature": X.columns,
+    "Importance": model.feature_importances_
+}).sort_values("Importance", ascending=False)
+
+print(importance.head(10))
+
+importance.to_csv(
+    "../data/processed/feature_importance.csv",
+    index=False
 )
 
 # Save model
