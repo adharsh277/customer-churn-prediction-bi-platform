@@ -19,15 +19,6 @@
 
 ---
 
-## Screenshots
-
-![Executive Overview](assets/customer_executive.png)
-
-![Customer Analytics](assets/customer_churn.png)
-
-![Prediction Center](assets/customer_predi.png)
-
-![Feature Importance](assets/top_factor.png)
 
 ## Project Overview
 
@@ -101,6 +92,16 @@ Key Features:
 * GitHub
 
 ---
+
+## Screenshots
+
+![Executive Overview](assets/customer_executive.png)
+
+![Customer Analytics](assets/customer_churn.png)
+
+![Prediction Center](assets/customer_predi.png)
+
+![Feature Importance](assets/top_factor.png)
 
 ## Project Architecture
 
