@@ -19,12 +19,15 @@
 
 ---
 
-<p align="center">
-	<img src="assets/customer_executive.png" alt="Executive" width="220" />
-	<img src="assets/customer_churn.png" alt="Churn" width="220" />
-	<img src="assets/customer_predi.png" alt="Predictions" width="220" />
-	<img src="assets/top_factor.png" alt="Top Factors" width="220" />
-</p>
+## Screenshots
+
+![Executive Overview](assets/customer_executive.png)
+
+![Customer Analytics](assets/customer_churn.png)
+
+![Prediction Center](assets/customer_predi.png)
+
+![Feature Importance](assets/top_factor.png)
 
 ## Project Overview
 
